@@ -75,6 +75,7 @@ input {
   height: 40px;
   width: 100%;
   border: none;
+  align-content: left;
 }
 
 input::placeholder {
@@ -132,6 +133,7 @@ div.sidebar ul li:hover {
   margin: 10px 0px;
   padding: 20px;
   border: 2px dashed grey;
+  
 }
 
 .sidebar {

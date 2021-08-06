@@ -1,11 +1,11 @@
 import React from "react";
 import NoteItem from "./NoteItem";
 
-function NoteList() {
+function NoteList({ note, selectNote, setEdit }) {
   return (
     <ul>
       {/* Render list of notes here... */}
-      <NoteItem />
+      <NoteItem note={note} selectNote={selectNote} setEdit={setEdit}/>
     </ul>
   );
 }

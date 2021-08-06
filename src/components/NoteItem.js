@@ -1,10 +1,13 @@
 import React from "react";
 
-function NoteItem() {
+function NoteItem({ note, selectNote, setEdit} ) {
   return (
-    <li>
-      <h2>Title</h2>
-      <p>Caption...</p>
+    <li onClick={() => {
+      selectNote(note);
+      setEdit(false)
+      }} >
+      <h2>{note.title}</h2>
+      <p>{note.body.slice(0,30)}...</p>
     </li>
   );
 }

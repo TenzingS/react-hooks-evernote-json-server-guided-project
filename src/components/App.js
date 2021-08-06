@@ -5,6 +5,7 @@ import NoteContainer from "./NoteContainer";
 function App() {
   return (
     <div className="app">
+      
       <Header />
       <NoteContainer />
     </div>
